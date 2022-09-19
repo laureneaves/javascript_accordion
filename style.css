@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #606060;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 3rem;
+    width: 47rem;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    letter-spacing: 1px;
+    width: 70%;
+    max-width: 588px;
+    left: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h1, h2 {
+    position: absolute;
+}
+
+h2 {
+    color: black;
+    text-transform: capitalize;
+    font-size: 28px;
+    max-width: 390px;
+}
+
+h3 {
+    color: black;
+    font-size: 15px;
+}
+
+.banner {
+    position: relative;
+    width: 35%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 100vh;
+    float: left;
+}
+
+.logo, .faq-heading {
+    left: 50px;
+    width: 80%;
+}
+
+.logo{
+    top: 50px;
+    left: 50px;
+}
+
+.faq-heading {
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
+
+.faq-heading > hr {
+    max-width: 65px;
+    margin-left: 0;
+    margin-bottom: 40px;
+    border-top: 0.5px solid black;
+}
+
+.accordion .accordion-item {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 0.5px solid #606060;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 0.5px solid #606060;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #606060;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: darkblue;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #606060;
+    border: 2px solid darkblue;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 0.5px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: darkblue;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
