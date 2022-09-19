@@ -26,6 +26,6 @@ This project is a FAQ section of a website with the questions contained within a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Preview
-![accordion-github](https://user-images.githubusercontent.com/100521870/191103914-2bbd55da-340e-4319-a9ba-f3a044589b9c.png)
+![screencapture-localhost-8080-index-html-2022-09-19-21_07_26](https://user-images.githubusercontent.com/100521870/191104344-8b87f6b3-b0b5-4a78-bba4-c8c88666a6eb.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
