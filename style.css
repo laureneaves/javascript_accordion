@@ -184,3 +184,14 @@ h3 {
     font-weight: 300;
     margin: 2em 0;
 }
+
+/* == Media Queries - Mobile == */
+@media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+
+    .banner {
+        display: none;
+    }
+}
